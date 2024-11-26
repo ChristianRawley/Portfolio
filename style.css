@@ -17,12 +17,12 @@
 
 .topbar h2 {
   flex: 1;
-  font-size: 2rem;
+  font-size: 4vh;
 }
 
 .topbar_holder {
   display: flex;
-  font-size: 1.5rem;
+  font-size: 3vh;
   justify-content: space-between;
 }
 
@@ -44,11 +44,11 @@
 }
 
 .welcome h2 {
-  font-size: 2rem
+  font-size: 4vh
 }
 
 .welcome p {
-  font-size: 1.5rem;
+  font-size: 3vh;
 }
 
 .about {
