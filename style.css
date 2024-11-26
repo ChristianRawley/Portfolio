@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
+
+.topbar {
+    background-color: #292828;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cambria';
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.topbar h2 {
+    margin: 16px;
+    font-size: 24px;
+}
+
+.topbar_holder {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.topbar_holder p {
+    background-color: #424140;
+    margin: 4px;
+    padding: 8px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.welcome {
+    background-color:#424140;
+    height:100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Cambria';
+    flex-direction: column;
+    text-align: center;
+}
+
+.about {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
