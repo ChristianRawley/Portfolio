@@ -7,7 +7,7 @@
 .topbar {
   background-color: #212529;
   color: white;
-  padding: 1rem;
+  padding: 2vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +27,14 @@
 }
 
 .topbar_holder p {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1vh;
+  margin-right: 1vh;
+}
+
+@media (max-width: 600px) {
+  .topbar h2 {
+    display: none;
+  }
 }
 
 .welcome {
@@ -40,7 +46,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  padding: 2vh;
 }
 
 .welcome h2 {
