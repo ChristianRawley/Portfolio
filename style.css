@@ -1,62 +1,65 @@
-* {
+body {
+  font-family: Cambria;
   margin: 0;
   padding: 0;
-  font-family: 'Cambria';
+  background-color: #c0c0c0;
 }
 
-.topbar {
-  background-color: #212529;
-  color: white;
-  padding: 2vh;
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 0;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.topbar h2 {
-  flex: 1;
-  font-size: 4vh;
-}
-
-.topbar_holder {
-  display: flex;
-  font-size: 3vh;
-  justify-content: space-between;
-}
-
-.topbar_holder p {
-  margin-left: 1vh;
-  margin-right: 1vh;
-}
-
-@media (max-width: 600px) {
-  .topbar h2 {
-    display: none;
-  }
-}
-
-.welcome {
-  background-color: #495057;
-  color: white;
-  height: 90vh;
+.profile, .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 12px;
   text-align: center;
-  padding: 2vh;
+  box-shadow: 0px 0px 8px gray;
+  margin: 12px
 }
 
-.welcome h2 {
-  font-size: 4vh
+.contact p {
+  margin: 0;
 }
 
-.welcome p {
-  font-size: 3vh;
+.profile h2, .profile p {
+  margin: 0px;
 }
 
-.about {
-  height: 90vh;
+.profile h2 {
+  font-size: 32px;
+}
+
+.profile p {
+  font-size: 16px;
+}
+
+.img {
+  max-width: 125px;
+  border-radius: 100%;
+  margin-top: 12px;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.middle-content {
+  flex: 2;
+}
+
+@media (max-width: 800px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .left-content, .middle-content {
+      max-width: none;
+  }
 }
