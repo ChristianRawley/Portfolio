@@ -1,57 +1,122 @@
-body {
-  font-family: Cambria;
+/* color scheme: https://www.canva.com/colors/color-meanings/charcoal/ */
+
+* {
   margin: 0;
   padding: 0;
-  background-color: #c0c0c0;
+  font-family: Cabria;
+}
+
+body {
+  background-color: #36454f;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
 }
 
-.profile, .contact {
+.profile-container {
+  margin: 16px;
+  margin-bottom: 0px;
+  padding: 16px;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
-  background-color: #ffffff;
-  padding: 12px;
   text-align: center;
-  box-shadow: 0px 0px 8px gray;
-  margin: 12px
+  background-color: #495D6A;
+  flex: 1;
+  border-radius: 12px;
 }
 
-.contact p {
-  margin: 0;
+.main-container {
+  flex: 4;
 }
 
-.profile h2, .profile p {
-  margin: 0px;
+.profile-container img {
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
 }
 
-.profile h2 {
+.profile-container h1 {
   font-size: 32px;
+  margin: 8px;
 }
 
-.profile p {
+.profile-container h2 {
+  font-size: 16px;
+  margin: 8px;
+  color: #C3CED6;
+}
+
+.profile-container p {
+  font-size: 20px;
+  margin: 8px;
+}
+
+.profile-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 8px;
+}
+
+.profile-container .profile-contacts img {
+  border-radius: 0%;
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.experience-container, .project-container {
+  color: white;
+  margin: 16px;
+  padding: 16px;
+  background-color: #495D6A;
+  border-radius: 12px;
+}
+
+.experience {
+  margin-top: 24px;
+}
+
+.experience h4 {
+  color: #A7B8C3;
+  font-size: 12px;
+}
+
+.experience h2, .project h2 {
+  font-size: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.experience p, .project p {
   font-size: 16px;
 }
 
-.img {
-  max-width: 125px;
-  border-radius: 100%;
-  margin-top: 12px;
+.project {
+  margin-top: 24px;
 }
 
-.left-content {
-  flex: 1;
+.project .skills {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
-.middle-content {
-  flex: 2;
+.project .skills p {
+  padding: 4px;
+  border-width: 1px;
+  background-color: #718C9E;
+  font-size: 16px;
+  border-radius: 8px;
 }
 
 @media (max-width: 800px) {
@@ -59,7 +124,7 @@ body {
       flex-direction: column;
   }
 
-  .left-content, .middle-content {
+  .profile-content, .main-content {
       max-width: none;
   }
 }
